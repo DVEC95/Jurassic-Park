@@ -57,7 +57,10 @@ describe('Park', function() {
     assert.strictEqual(actual, 5400);
   });
 
-  it('should be able to calculate the total number of visitors per year');
+  it('should be able to calculate the total number of visitors per year', function(){
+    actual = park.totalVisitorsPerYear(park.totalVisitors());
+    assert.strictEqual(actual, 1971000);
+  });
 
   it('should be able to calculate total revenue for one year');
 
